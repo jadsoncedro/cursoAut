@@ -12,14 +12,15 @@ public class Config{
 	   
 	  public WebDriver driver;	  
 	  public String baseUrl 					= "https://trade.fastmarkets.com.br/login";
-	  public String pathChromeServer 			= "drivers//chrome.exe";
+	  public String pathChromeServer 			= "drivers//chromedriver.exe";
 
 	  	  
 	  public void fastTrade() throws Exception {			
   		try{  			 
-  	    	System.setProperty("webdriver.chrome.driver",pathChromeServer);
-  	  		driver = new ChromeDriver();
-  	  		driver.manage().window().maximize();
+  			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
+			System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe");
+			driver = new ChromeDriver(options);
   			
 			driver.get(baseUrl);
   	  		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

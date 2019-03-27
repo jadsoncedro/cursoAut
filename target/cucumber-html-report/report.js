@@ -184,8 +184,8 @@ formatter.match({
   "location": "TCS01.preencherFormulario(DataTable)"
 });
 formatter.result({
-  "duration": 3751182413,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat suite.Config.fastTrade(Config.java:28)\r\n\tat casos.testes.TCS01.preencherFormulario(TCS01.java:19)\r\n\tat ✽.Dado o preenchimento dos dados(caracteristicas/TCS01.feature:6)\r\n",
+  "duration": 27736178202,
+  "error_message": "java.lang.NullPointerException\r\n\tat casos.testes.TCS01.preencherFormulario(TCS01.java:25)\r\n\tat ✽.Dado o preenchimento dos dados(caracteristicas/TCS01.feature:6)\r\n",
   "status": "failed"
 });
 formatter.match({});
