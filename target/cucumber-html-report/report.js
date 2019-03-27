@@ -7,9 +7,9 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Validar todas as funcionalidades do sistemas BomPraCrédito",
+  "name": "Realizar o cadastro na conta do sistema FastTrade para utilização do sistema",
   "description": "",
-  "id": "validar-todas-as-funcionalidades-do-sistemas-bompracrédito",
+  "id": "realizar-o-cadastro-na-conta-do-sistema-fasttrade-para-utilização-do-sistema",
   "keyword": "Funcionalidade",
   "tags": [
     {
@@ -20,56 +20,97 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 5,
-  "name": "Inserir informações para acessar a tela de cadastro do cliente",
+  "name": "Acessar o sistema e realizar o preenchimento do formulário do sistema",
   "description": "",
-  "id": "validar-todas-as-funcionalidades-do-sistemas-bompracrédito;inserir-informações-para-acessar-a-tela-de-cadastro-do-cliente",
+  "id": "realizar-o-cadastro-na-conta-do-sistema-fasttrade-para-utilização-do-sistema;acessar-o-sistema-e-realizar-o-preenchimento-do-formulário-do-sistema",
   "type": "scenario_outline",
   "keyword": "Esquema do Cenário"
 });
 formatter.step({
   "line": 6,
-  "name": "quanto vc precisa\u003cvalor\u003e em quantas vezes\u003cparcela\u003e seu\u003cnome\u003e e seu\u003cemail\u003e",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 7,
-  "name": "vericar se o\u003cnome\u003e é exibido na tela de cadastro",
-  "keyword": "Entao "
-});
-formatter.examples({
-  "line": 9,
-  "name": "",
-  "description": "",
-  "id": "validar-todas-as-funcionalidades-do-sistemas-bompracrédito;inserir-informações-para-acessar-a-tela-de-cadastro-do-cliente;",
+  "name": "o preenchimento dos dados",
   "rows": [
     {
       "cells": [
-        "valor",
-        "parcela",
-        "nome",
-        "email"
+        "Nome",
+        "cpf",
+        "Telefone",
+        "Email",
+        "Estado",
+        "Cidade",
+        "Endereco",
+        "CEP",
+        "Nivel",
+        "Possui_conta"
       ],
-      "line": 10,
-      "id": "validar-todas-as-funcionalidades-do-sistemas-bompracrédito;inserir-informações-para-acessar-a-tela-de-cadastro-do-cliente;;1"
+      "line": 7
     },
     {
       "cells": [
-        "\"10.000\"",
-        "\"18\"",
-        "\"Mirella Malu da Mota\"",
-        "\"mirellamaludamota@gmail.com\""
+        "Vera Raquel Marina Costa",
+        "81654683752",
+        "9139026058",
+        "vera@gmail.com",
+        "MG",
+        "Uberlandia",
+        "Vila Vinicius",
+        "66812477",
+        "Sou iniciante no assunto",
+        "Outra Corretora"
       ],
-      "line": 11,
-      "id": "validar-todas-as-funcionalidades-do-sistemas-bompracrédito;inserir-informações-para-acessar-a-tela-de-cadastro-do-cliente;;2"
+      "line": 8
+    },
+    {
+      "cells": [
+        "Fernanda Louise Malu Freitas",
+        "65891788608",
+        "95070272624",
+        "fernanda@gmail.com",
+        "MG",
+        "Uberlandia",
+        "Rua Professor Mario Daniel",
+        "38414212",
+        "Negocio frequentemente",
+        "Socopa Sc Paulista S.A."
+      ],
+      "line": 9
+    }
+  ],
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "exibir a mensagem \u003cmensagem\u003e",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "line": 12,
+  "name": "",
+  "description": "",
+  "id": "realizar-o-cadastro-na-conta-do-sistema-fasttrade-para-utilização-do-sistema;acessar-o-sistema-e-realizar-o-preenchimento-do-formulário-do-sistema;",
+  "rows": [
+    {
+      "cells": [
+        "mensagem"
+      ],
+      "line": 13,
+      "id": "realizar-o-cadastro-na-conta-do-sistema-fasttrade-para-utilização-do-sistema;acessar-o-sistema-e-realizar-o-preenchimento-do-formulário-do-sistema;;1"
+    },
+    {
+      "cells": [
+        "cadastro realizado com sucesso"
+      ],
+      "line": 14,
+      "id": "realizar-o-cadastro-na-conta-do-sistema-fasttrade-para-utilização-do-sistema;acessar-o-sistema-e-realizar-o-preenchimento-do-formulário-do-sistema;;2"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "Inserir informações para acessar a tela de cadastro do cliente",
+  "line": 14,
+  "name": "Acessar o sistema e realizar o preenchimento do formulário do sistema",
   "description": "",
-  "id": "validar-todas-as-funcionalidades-do-sistemas-bompracrédito;inserir-informações-para-acessar-a-tela-de-cadastro-do-cliente;;2",
+  "id": "realizar-o-cadastro-na-conta-do-sistema-fasttrade-para-utilização-do-sistema;acessar-o-sistema-e-realizar-o-preenchimento-do-formulário-do-sistema;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
@@ -81,26 +122,71 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "quanto vc precisa\"10.000\" em quantas vezes\"18\" seu\"Mirella Malu da Mota\" e seu\"mirellamaludamota@gmail.com\"",
-  "matchedColumns": [
-    0,
-    1,
-    2,
-    3
+  "name": "o preenchimento dos dados",
+  "rows": [
+    {
+      "cells": [
+        "Nome",
+        "cpf",
+        "Telefone",
+        "Email",
+        "Estado",
+        "Cidade",
+        "Endereco",
+        "CEP",
+        "Nivel",
+        "Possui_conta"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "Vera Raquel Marina Costa",
+        "81654683752",
+        "9139026058",
+        "vera@gmail.com",
+        "MG",
+        "Uberlandia",
+        "Vila Vinicius",
+        "66812477",
+        "Sou iniciante no assunto",
+        "Outra Corretora"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "Fernanda Louise Malu Freitas",
+        "65891788608",
+        "95070272624",
+        "fernanda@gmail.com",
+        "MG",
+        "Uberlandia",
+        "Rua Professor Mario Daniel",
+        "38414212",
+        "Negocio frequentemente",
+        "Socopa Sc Paulista S.A."
+      ],
+      "line": 9
+    }
   ],
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 7,
-  "name": "vericar se o\"Mirella Malu da Mota\" é exibido na tela de cadastro",
+  "line": 10,
+  "name": "exibir a mensagem cadastro realizado com sucesso",
   "matchedColumns": [
-    2
+    0
   ],
   "keyword": "Entao "
 });
-formatter.match({});
+formatter.match({
+  "location": "TCS01.preencherFormulario(DataTable)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 3751182413,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat suite.Config.fastTrade(Config.java:28)\r\n\tat casos.testes.TCS01.preencherFormulario(TCS01.java:19)\r\n\tat ✽.Dado o preenchimento dos dados(caracteristicas/TCS01.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.match({});
 formatter.result({
