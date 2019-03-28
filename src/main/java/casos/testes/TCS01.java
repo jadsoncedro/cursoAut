@@ -51,6 +51,8 @@ public class TCS01 extends Config {
 			    new Select(driver.findElement(By.id("nivelExperiencia"))).selectByVisibleText( dados.get("Nivel"));
 			    new Select(driver.findElement(By.id("brokerAtiva"))).selectByVisibleText(dados.get("Possui_conta"));
 			    
+			    // Teste Humberto do Git
+			    
 			 }
 		} catch (Exception e) {
 				System.out.println(e.getMessage());
