@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class Config{
 	   
 	  public WebDriver driver;	  
-	  public String baseUrl 					= "https://trade.fastmarkets.com.br/login";
+	  public String baseUrl 					= "http://fast.cedrotech.com/FastCloudWebapp/";
 	  public String pathChromeServer 			= "drivers//chromedriver.exe";
 
 	  	  

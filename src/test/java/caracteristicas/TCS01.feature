@@ -4,11 +4,7 @@ Funcionalidade: Realizar o cadastro na conta do sistema FastTrade para utilizaç
 
   Esquema do Cenário: Acessar o sistema e realizar o preenchimento do formulário do sistema
     Dado o preenchimento dos dados
-      | Nome                         | cpf         | Telefone    | Email              | Estado | Cidade     | Endereco                   | CEP      | Nivel                    | Possui_conta            |
-      | Vera Raquel Marina Costa     | 81654683752 |  9139026058 | vera@gmail.com     | MG     | Uberlandia | Vila Vinicius              | 66812477 | Sou iniciante no assunto | Outra Corretora         |
-      | Fernanda Louise Malu Freitas | 65891788608 | 95070272624 | fernanda@gmail.com | MG     | Uberlandia | Rua Professor Mario Daniel | 38414212 | Negocio frequentemente   | Socopa Sc Paulista S.A. |
-    Entao exibir a mensagem <mensagem>
-
-    Exemplos: 
-      | mensagem                       |
-      | cadastro realizado com sucesso |
+      | Nome                             | cpf         | Telefone   | Email              | Estado | Cidade     | Endereco          | CEP      | Nivel                    | Possui_conta            | Mensagem                               |
+      | Bárbara Patrícia Lorena Silveira | 08502191675 | 3428547496 | vera@gmail.com     | MG     | Uberlandia | Rua Florença      | 38401174 | Sou iniciante no assunto | Outra Corretora         | Agora você é um usuário do Fast Trade! |
+      | Francisca Giovanna Lopes         | 80026846640 | 3426743068 | fernanda@gmail.com | MG     | Uberlandia | Rua Miguel Felice | 38400616 | Negocio frequentemente   | Socopa Sc Paulista S.A. | Agora você é um usuário do Fast Trade! |
+    Entao validar mensagem de retorno

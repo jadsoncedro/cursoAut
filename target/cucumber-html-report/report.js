@@ -183,13 +183,3 @@ formatter.step({
 formatter.match({
   "location": "TCS01.preencherFormulario(DataTable)"
 });
-formatter.result({
-  "duration": 11792203776,
-  "error_message": "java.lang.NullPointerException\r\n\tat casos.testes.TCS01.preencherFormulario(TCS01.java:25)\r\n\tat ✽.Dado o preenchimento dos dados(caracteristicas/TCS01.feature:6)\r\n",
-  "status": "failed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-});
